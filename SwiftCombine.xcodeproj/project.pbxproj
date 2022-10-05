@@ -16,6 +16,8 @@
 		F53E8F1F28ECF5820093E3B9 /* SwiftCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E8F1E28ECF5820093E3B9 /* SwiftCombineTests.swift */; };
 		F53E8F2928ECF5820093E3B9 /* SwiftCombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E8F2828ECF5820093E3B9 /* SwiftCombineUITests.swift */; };
 		F53E8F2B28ECF5820093E3B9 /* SwiftCombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E8F2A28ECF5820093E3B9 /* SwiftCombineUITestsLaunchTests.swift */; };
+		F540889B28EE16D500B95272 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540889A28EE16D400B95272 /* CustomTextField.swift */; };
+		F540889E28EE4B3500B95272 /* Screen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540889D28EE4B3500B95272 /* Screen+Size.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		F53E8F2428ECF5820093E3B9 /* SwiftCombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53E8F2828ECF5820093E3B9 /* SwiftCombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCombineUITests.swift; sourceTree = "<group>"; };
 		F53E8F2A28ECF5820093E3B9 /* SwiftCombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F540889A28EE16D400B95272 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F540889D28EE4B3500B95272 /* Screen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen+Size.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 		F53E8F0728ECF57E0093E3B9 /* SwiftCombine */ = {
 			isa = PBXGroup;
 			children = (
+				F540889C28EE48A100B95272 /* group */,
 				F53E8F0828ECF57E0093E3B9 /* SwiftCombineApp.swift */,
 				F53E8F0A28ECF57E0093E3B9 /* ContentView.swift */,
+				F540889A28EE16D400B95272 /* CustomTextField.swift */,
 				F53E8F0C28ECF5820093E3B9 /* Assets.xcassets */,
 				F53E8F1128ECF5820093E3B9 /* Persistence.swift */,
 				F53E8F1328ECF5820093E3B9 /* SwiftCombine.xcdatamodeld */,
@@ -131,6 +137,14 @@
 				F53E8F2A28ECF5820093E3B9 /* SwiftCombineUITestsLaunchTests.swift */,
 			);
 			path = SwiftCombineUITests;
+			sourceTree = "<group>";
+		};
+		F540889C28EE48A100B95272 /* group */ = {
+			isa = PBXGroup;
+			children = (
+				F540889D28EE4B3500B95272 /* Screen+Size.swift */,
+			);
+			path = group;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +279,9 @@
 			files = (
 				F53E8F1228ECF5820093E3B9 /* Persistence.swift in Sources */,
 				F53E8F0B28ECF57E0093E3B9 /* ContentView.swift in Sources */,
+				F540889E28EE4B3500B95272 /* Screen+Size.swift in Sources */,
 				F53E8F0928ECF57E0093E3B9 /* SwiftCombineApp.swift in Sources */,
+				F540889B28EE16D500B95272 /* CustomTextField.swift in Sources */,
 				F53E8F1528ECF5820093E3B9 /* SwiftCombine.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
