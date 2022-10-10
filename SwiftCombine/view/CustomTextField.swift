@@ -64,7 +64,6 @@ struct CustomTextField: View {
             
           } .frame(maxWidth: .infinity,maxHeight: 45)
             .background(Color.gray.opacity(0.3))
-            .cornerRadius(8.0)
             .shadow(color: Color.black.opacity(0.08), radius: 16, x: 0.0, y: 16)
             .textFieldStyle(.roundedBorder)
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
