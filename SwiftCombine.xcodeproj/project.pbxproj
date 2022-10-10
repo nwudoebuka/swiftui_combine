@@ -18,6 +18,17 @@
 		F53E8F2B28ECF5820093E3B9 /* SwiftCombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E8F2A28ECF5820093E3B9 /* SwiftCombineUITestsLaunchTests.swift */; };
 		F540889B28EE16D500B95272 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540889A28EE16D400B95272 /* CustomTextField.swift */; };
 		F540889E28EE4B3500B95272 /* Screen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540889D28EE4B3500B95272 /* Screen+Size.swift */; };
+		F54088A028EE534700B95272 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540889F28EE534700B95272 /* DashboardView.swift */; };
+		F5C71BE928EF6B6300B483AF /* Binding+GetterSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C71BE828EF6B6300B483AF /* Binding+GetterSetter.swift */; };
+		F5C71BEE28EF8E2900B483AF /* UsersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C71BED28EF8E2900B483AF /* UsersCard.swift */; };
+		F5C75A6928F360ED003AEB9B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C75A6828F360ED003AEB9B /* ApiClient.swift */; };
+		F5C75A6B28F36131003AEB9B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C75A6A28F36131003AEB9B /* Service.swift */; };
+		F5C75A6E28F3618B003AEB9B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C75A6D28F3618B003AEB9B /* Constants.swift */; };
+		F5C75A7128F3625E003AEB9B /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C75A7028F3625E003AEB9B /* UserResponse.swift */; };
+		F5C75A7428F369B8003AEB9B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C75A7328F369B8003AEB9B /* UserViewModel.swift */; };
+		F5C75A7628F36F37003AEB9B /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C75A7528F36F37003AEB9B /* ApiError.swift */; };
+		F5C75A7828F36F8E003AEB9B /* String+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C75A7728F36F8E003AEB9B /* String+Description.swift */; };
+		F5C75A7A28F37207003AEB9B /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C75A7928F37207003AEB9B /* Container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +63,17 @@
 		F53E8F2A28ECF5820093E3B9 /* SwiftCombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F540889A28EE16D400B95272 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F540889D28EE4B3500B95272 /* Screen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen+Size.swift"; sourceTree = "<group>"; };
+		F540889F28EE534700B95272 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		F5C71BE828EF6B6300B483AF /* Binding+GetterSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+GetterSetter.swift"; sourceTree = "<group>"; };
+		F5C71BED28EF8E2900B483AF /* UsersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCard.swift; sourceTree = "<group>"; };
+		F5C75A6828F360ED003AEB9B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F5C75A6A28F36131003AEB9B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F5C75A6D28F3618B003AEB9B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F5C75A7028F3625E003AEB9B /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		F5C75A7328F369B8003AEB9B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F5C75A7528F36F37003AEB9B /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F5C75A7728F36F8E003AEB9B /* String+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Description.swift"; sourceTree = "<group>"; };
+		F5C75A7928F37207003AEB9B /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +124,13 @@
 		F53E8F0728ECF57E0093E3B9 /* SwiftCombine */ = {
 			isa = PBXGroup;
 			children = (
-				F540889C28EE48A100B95272 /* group */,
+				F5C75A7228F36937003AEB9B /* viewmodel */,
+				F5C75A6F28F361F7003AEB9B /* model */,
+				F5C75A6C28F3616C003AEB9B /* utils */,
+				F5C75A6728F36087003AEB9B /* service */,
+				F5C71BEC28EF8E0200B483AF /* view */,
+				F540889C28EE48A100B95272 /* extension */,
 				F53E8F0828ECF57E0093E3B9 /* SwiftCombineApp.swift */,
-				F53E8F0A28ECF57E0093E3B9 /* ContentView.swift */,
-				F540889A28EE16D400B95272 /* CustomTextField.swift */,
 				F53E8F0C28ECF5820093E3B9 /* Assets.xcassets */,
 				F53E8F1128ECF5820093E3B9 /* Persistence.swift */,
 				F53E8F1328ECF5820093E3B9 /* SwiftCombine.xcdatamodeld */,
@@ -139,12 +164,60 @@
 			path = SwiftCombineUITests;
 			sourceTree = "<group>";
 		};
-		F540889C28EE48A100B95272 /* group */ = {
+		F540889C28EE48A100B95272 /* extension */ = {
 			isa = PBXGroup;
 			children = (
 				F540889D28EE4B3500B95272 /* Screen+Size.swift */,
+				F5C71BE828EF6B6300B483AF /* Binding+GetterSetter.swift */,
+				F5C75A7728F36F8E003AEB9B /* String+Description.swift */,
 			);
-			path = group;
+			path = extension;
+			sourceTree = "<group>";
+		};
+		F5C71BEC28EF8E0200B483AF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F53E8F0A28ECF57E0093E3B9 /* ContentView.swift */,
+				F540889A28EE16D400B95272 /* CustomTextField.swift */,
+				F540889F28EE534700B95272 /* DashboardView.swift */,
+				F5C71BED28EF8E2900B483AF /* UsersCard.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F5C75A6728F36087003AEB9B /* service */ = {
+			isa = PBXGroup;
+			children = (
+				F5C75A6828F360ED003AEB9B /* ApiClient.swift */,
+				F5C75A6A28F36131003AEB9B /* Service.swift */,
+				F5C75A7528F36F37003AEB9B /* ApiError.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		F5C75A6C28F3616C003AEB9B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5C75A6D28F3618B003AEB9B /* Constants.swift */,
+				F5C75A7928F37207003AEB9B /* Container.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F5C75A6F28F361F7003AEB9B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F5C75A7028F3625E003AEB9B /* UserResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F5C75A7228F36937003AEB9B /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F5C75A7328F369B8003AEB9B /* UserViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,12 +350,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C71BEE28EF8E2900B483AF /* UsersCard.swift in Sources */,
 				F53E8F1228ECF5820093E3B9 /* Persistence.swift in Sources */,
 				F53E8F0B28ECF57E0093E3B9 /* ContentView.swift in Sources */,
 				F540889E28EE4B3500B95272 /* Screen+Size.swift in Sources */,
+				F54088A028EE534700B95272 /* DashboardView.swift in Sources */,
+				F5C75A7428F369B8003AEB9B /* UserViewModel.swift in Sources */,
+				F5C75A7128F3625E003AEB9B /* UserResponse.swift in Sources */,
 				F53E8F0928ECF57E0093E3B9 /* SwiftCombineApp.swift in Sources */,
+				F5C75A7628F36F37003AEB9B /* ApiError.swift in Sources */,
+				F5C75A7828F36F8E003AEB9B /* String+Description.swift in Sources */,
+				F5C71BE928EF6B6300B483AF /* Binding+GetterSetter.swift in Sources */,
 				F540889B28EE16D500B95272 /* CustomTextField.swift in Sources */,
+				F5C75A6B28F36131003AEB9B /* Service.swift in Sources */,
 				F53E8F1528ECF5820093E3B9 /* SwiftCombine.xcdatamodeld in Sources */,
+				F5C75A6928F360ED003AEB9B /* ApiClient.swift in Sources */,
+				F5C75A6E28F3618B003AEB9B /* Constants.swift in Sources */,
+				F5C75A7A28F37207003AEB9B /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
