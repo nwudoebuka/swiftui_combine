@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
     var initialText: String = ""
     @State var emailKey = ""
     @State var passwordKey = ""
-    @State var isEmailValidEntry : Bool   = true
-    @State var isPasswordValidEntry : Bool   = true
+    @State var isEmailValidEntry : Bool   = false
+    @State var isPasswordValidEntry : Bool   = false
+    @State private var canNavigateToDashboard = false
+    @ObservedObject var viewModel = UserViewModel()
     var body: some View {
       let emailBinding = Binding<String>(get: {
                  self.emailKey
@@ -43,22 +44,38 @@ struct ContentView: View {
               .font(.system(size: 20, weight: .bold, design: .default))
             Spacer()
               .frame(minHeight: 50, maxHeight: 50)
+            VStack(alignment: .leading, spacing: 0) {
             CustomTextField(initialText: initialText,isPassword: false,binding:emailBinding,isValidEntry: isEmailValidEntry)
+            if !self.validateEmail(self.emailKey) && !self.emailKey.isEmpty {
+              Spacer()
+                .frame(minHeight: 4, maxHeight: 4)
+            Text("Invalid email format")
+              .frame(maxWidth: .infinity, alignment: .leading)
+              .padding(.leading,20)
+              .foregroundColor(.red)
+              .font(.system(size: 14))
+              .multilineTextAlignment(.leading)
+            }
+          }
             Spacer()
               .frame(minHeight: 20, maxHeight: 20)
             CustomTextField(initialText: initialText,isPassword: true,binding:passwordBinding,isValidEntry: isPasswordValidEntry)
             Spacer()
               .frame(minHeight: 40, maxHeight: 40)
             Button(action: {
+              if isEmailValidEntry && isPasswordValidEntry{
+              canNavigateToDashboard = true
+              }
             }, label: {
               Text("Login")
+                .frame(width: UIScreen.screenWidth - 40, height: 45, alignment: .center)
                 .foregroundColor(.white)
                 .font(.system(size: 14, weight: .bold, design: .default))
             }).frame(width: UIScreen.screenWidth - 40, height: 45)
               .background(Color.black)
           }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
-          
         }
+        .fullScreenCover(isPresented: $canNavigateToDashboard, content:  DashboardView.init)
     }
   
   func validateEmail(_ string: String) -> Bool {
@@ -79,27 +96,8 @@ struct ContentView: View {
   }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
       ContentView()
-    }
-}
-
-extension Binding {
-    func onChange(_ handler: @escaping (Value) -> Void) -> Binding<Value> {
-        Binding(
-            get: { self.wrappedValue },
-            set: { newValue in
-                self.wrappedValue = newValue
-                handler(newValue)
-            }
-        )
     }
 }
